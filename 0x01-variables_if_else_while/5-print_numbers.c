@@ -7,9 +7,9 @@ int main(void)
 {
 	unsigned int num;
 
-	for (num = '0'; num <= '9'; ++ap)
+	for (num = 0; i <= 9; ++num)
 	{
-		printf("%num", num)
+		printf("%num", num);
 	}
 	putchar('\n');
 	return (0);
