@@ -1,31 +1,35 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
 
-int main (void) {
-  
-  /*local variable definition*/
-  int n 
+/* betty style doc for function main goes there */
+/**
+ *main - void
+ *Return: null
+ */
+int main(void)
+{
+	int n;
 
-  /* positive*/
-    
-    if ( n > 0 ) {
-      printf("is Positive");
-	}
-  
-  /* zero*/
-  
-    else if (n < 0)
-      {
-      printf("is negative");
-	}
-  
-  /* negative*/
-  
-    else {
-   printf("zeo");
-    }
-  
-  return 0;
-  
-	
-  
-  
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+{
+/*local variable definition*/
+int n
+/* positive*/
+if (n > 0)
+{
+printf("is Positive");
+}
+/* negative*/
+else if (n < 0)
+{
+printf("is negative");
+}
+/* zero*/
+else
+{
+printf("zero");
+}
+return (0);
