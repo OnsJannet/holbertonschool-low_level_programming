@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main () {
+int main (void) {
   
   /*local variable definition*/
   int n 
@@ -8,20 +8,21 @@ int main () {
   /* positive*/
     
     if ( n > 0 ) {
-      printf("is Positive")
+      printf("is Positive");
 	}
+  
   /* zero*/
   
-    else if {
-      (n = 0 )
-	printf("zero")
+    else if (n < 0)
+      {
+      printf("is negative");
 	}
+  
   /* negative*/
   
     else {
-      (n < 0)
-	printf("is negative")
-	}
+   printf("zeo");
+    }
   
   return 0;
   
