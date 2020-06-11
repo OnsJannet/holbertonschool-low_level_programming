@@ -5,9 +5,9 @@
 */
 int main(void)
 {
-	char p;
+	char ap;
 
-	for (ap = 'a'; i - 1 < 'z'; ++ap)
+	for (ap = 'a'; ap - 1 < 'z'; ++ap)
 	{
 		if ((ap != 'q') && (ap != 'e'))
 		{
