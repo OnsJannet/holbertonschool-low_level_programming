@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*_isalpha function that checks for alphabetic character.
+*_isalpha - function that checks for alphabetic character.
 *@c: The number to be checked
 * Return: Always 0.
 */
@@ -10,7 +10,7 @@ if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 {
 return (1);
 }
- else
+else
 {
 return (0);
 }
