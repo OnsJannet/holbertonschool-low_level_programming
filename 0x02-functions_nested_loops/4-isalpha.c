@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
- * function that checks for alphabetic character. 
+ *_isalphafunction that checks for alphabetic character. 
+*@c: The number to be checked
+ * Return: Always 0.
  */
 int _isalpha(int c)
 {
