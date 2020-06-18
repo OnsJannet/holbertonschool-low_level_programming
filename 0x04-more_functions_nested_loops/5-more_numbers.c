@@ -13,6 +13,6 @@ for (a = 0 ; a <= 14 ; a++)
 _putchar(a / 10 + '0');
 _putchar(a % 10 + '0');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
