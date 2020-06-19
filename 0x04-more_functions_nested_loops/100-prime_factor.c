@@ -1,28 +1,25 @@
 #include <stdio.h>
+
 /**
-*main - 0
-*Return: 0
+* main - prime factor
+* @n: integer
+*
+*
 */
-int main(void)
+int main(int n)
 {
-long long num;
-int  maxPrime, oddPrime;
-num = 612852475143;
-maxPrime = 0;
-oddPrime = 3;
-while (num % 2 == 0)
+int i, j, r;
+
+i = n;
+while (i <= n && i > 2)
 {
-maxPrime = 2;
-num /= 2;
+if (n % i == 0)
+for (j = 1; j < i; i++)
+{
+if (i % j == 0)
+print("%d\n", i);
 }
-while (num != 1)
-{
-while (num % oddPrime == 0)
-{
-maxPrime = oddPrime;
-num /= oddPrime;
+i--;
 }
-oddPrime += 2;
-}
-printf("%d\n", maxPrime);
+	return(0);
 }
