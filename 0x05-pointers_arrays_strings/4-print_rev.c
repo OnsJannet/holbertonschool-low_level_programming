@@ -5,17 +5,19 @@
  *
  * Return: 0
  */
+
 void print_rev(char *s)
 {
-int i = 0, j;
-while (i != '\0')
+char *i;
+i = s;
+while (*s != '\0')
 {
-i++;
-i--;
-for (j = i ; j != -1 ; j--)
+s++;
+}
+while (s != i)
 {
-_putchar(s[j]);
+s--;
+_putchar(*s);
+}
 _putchar('\n');
-}
-}
 }
