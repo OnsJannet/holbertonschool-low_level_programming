@@ -13,6 +13,7 @@ while (s[j] != '\0')
 j++
 j--;
 for (i = 0 ; i < j ; j--, i++)
+{
 temp = s[i];
 s[i] = s[j];
 s[j] = temp;
