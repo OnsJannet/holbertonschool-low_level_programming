@@ -14,6 +14,8 @@ i++;
 i--;
 for (j = i ; j != -1 ; j--)
 {
+}
+}
 _putchar(s[j]);
 _putchar('\n');
 }
