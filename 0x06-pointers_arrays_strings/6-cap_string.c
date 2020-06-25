@@ -1,42 +1,33 @@
 #include "holberton.h"
+
 /**
- * cap_string - converts string words to be capitalized
- * @s: input string to have all words capitalized
+ * cap_string - capitalizes each word in a string
+ * @s: string
  *
- * Return: string after conversion to Capitalize words
+ * Return: pointer to string
  */
+
+
 char *cap_string(char *s)
 {
-	int i;
+	int index, special_index;
 
-	for (i = 0; s[i] != '\0'; i++)
+	char special[13] = {' ', '\t', '\n', ',', ';', '.', '!',
+			    '?', '"', '(', ')', '{', '}'};
+
+	for (index = 0; s[index] != '\0'; index++)
 	{
-
-		if (i == 0)
+		if (s[0] >= 'a' && s[0] <= 'z')
+			s[0] -= 32;
+		for (special_index = 0; special_index < 13; special_index++)
 		{
-			if ((s[i] >= 'a' && s[i] <= 'z'))
-				s[i] = s[i] - 32;
-			continue;
-		}
-		if (s[i - 1] == ' ' || s[i - 1] ==  ',' ||
-		s[i - 1] ==  ';' || s[i - 1] ==  '.' || s[i - 1] ==  '!' ||
-		s[i - 1] ==  '?' || s[i - 1] ==  '(' || s[i - 1] ==  ')' ||
-		s[i - 1] ==  '{' || s[i - 1] ==  '}' ||
-		s[i - 1] == 9 || s[i - 1] == 10 ||  s[i - 1] == 0 || s[i - 1] == 32)
-		{
-			i++;
-
-			if (s[i] >= 'a' && s[i] <= 'z')
+			if (s[index] == special[special_index])
 			{
-				s[i] = s[i] - 32;
-				continue;
+				if (s[index + 1] >= 'a' && s[index + 1] <= 'z')
+					s[index + 1] -= 32;
 			}
 		}
-		else
-		{
-			if (s[i] >= 'A' && s[i] <= 'Z')
-				s[i] = s[i] + 32;
-		}
 	}
+
 	return (s);
 }
