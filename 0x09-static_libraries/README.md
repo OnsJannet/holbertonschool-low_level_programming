@@ -1,0 +1,1 @@
+This is about static_libraries
