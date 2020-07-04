@@ -5,7 +5,7 @@
  * @b: pointer to args
  * Return: Always 0 (Success)
  */
- int main(int a, char **b)
+int main(int a, char **b)
 {
 	(void)a;
 	printf("%s\n", *b);
