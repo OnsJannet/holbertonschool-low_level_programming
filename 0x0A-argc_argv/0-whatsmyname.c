@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - Entry Point
- * @a: number of args
- * @b: pointer to args
- * Return: Always 0 (Success)
- */
+  * main - entry point
+  * @argc: takes in string
+  * @argv: takes in array
+  * Return: 0
+  */
 int main(int argc, char *argv[])
 {
 	int i;
