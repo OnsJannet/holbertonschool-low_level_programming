@@ -1,4 +1,3 @@
- 
 #include <stdio.h>
 /**
  * main - Entry Point
@@ -8,7 +7,7 @@
  */
 int main(int a, char **b)
 {
-	while (a--)
-		printf("%s\n", *b++);
+	(void)b;
+	printf("%d\n", a - 1);
 	return (0);
 }
