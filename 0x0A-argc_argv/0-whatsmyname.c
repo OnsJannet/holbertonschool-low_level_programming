@@ -5,9 +5,11 @@
  * @b: pointer to args
  * Return: Always 0 (Success)
  */
-int main(int a, char **b)
+int main(int argc, char *argv[])
 {
-	(void)a;
-	printf("%s\n", *b);
+	int i;
+
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
 	return (0);
 }
