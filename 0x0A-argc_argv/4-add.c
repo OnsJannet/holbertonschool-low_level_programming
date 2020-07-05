@@ -18,7 +18,7 @@ unsigned int sum = 0;
 
 for (i = 1; i < argc; i++)
 {
-	if (*argv[i] >= 48 && *argv[i] <= 57)
+	if (*argv[i] >= '0' && *argv[i] <= '9')
 		sum += atoi(argv[i]);
 	else
 	{
@@ -29,5 +29,4 @@ for (i = 1; i < argc; i++)
 printf("%d\n", sum);
 
 return (sum);
-
 }
