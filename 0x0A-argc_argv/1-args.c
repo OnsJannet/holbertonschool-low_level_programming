@@ -1,13 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - Entry Point
- * @a: number of args
- * @b: pointer to args
- * Return: Always 0 (Success)
- */
-int main(int a, char **b)
+ * main - Prints number of arguments except of program
+ *
+ * @argc: Number of arguments
+ * @argv: Value of arguments
+ *
+ * Return: Returns an int
+**/
+
+int main(int argc, char *argv[])
 {
-	(void)b;
-	printf("%d\n", a - 1);
-	return (0);
+(void)argv;
+
+printf("%d\n", (argc - 1));
+
+return (0);
+
 }
