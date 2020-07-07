@@ -12,8 +12,8 @@ char *_strdup(char *str)
 	unsigned int i = 0;
 
 	if (str == 0)
-		return (0);
-	while (str[i] != 0)
+		return (NULL);
+	while (str[i] != NULL)
 		i++;
 	i++;
 	pstr = malloc(sizeof(char) * i);
