@@ -1,6 +1,7 @@
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+
 /**
  * _strdup - copies input string in newly allocated memory
  * @str: input string
@@ -33,4 +34,3 @@ char *_strdup(char *str)
 			s[i] = '\0';
 			return (s);
 		}
-		
