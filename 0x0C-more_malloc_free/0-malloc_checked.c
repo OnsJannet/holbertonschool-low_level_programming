@@ -1,20 +1,16 @@
-#include <stdlib.h>
-#include <stdio.h>
+
 #include "holberton.h"
 /**
- * malloc_checked- check the code for Holberton School students.
- *@b : unsigned int of needed memory
- *
+ * malloc_checked - allocates memory using malloc
+ * @b:amount of needed memory
  * Return: void
  */
 void *malloc_checked(unsigned int b)
 {
-void *p;
+	void *ptr;
 
-ptr = malloc(b);
-
-if (p == NULL)
-	exit(98);
-
-return (p);
+	p = malloc(b);
+	if (ptr == NULL)
+		exit(98);
+	return (ptr);
 }
