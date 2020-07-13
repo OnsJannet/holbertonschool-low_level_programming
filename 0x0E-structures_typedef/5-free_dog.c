@@ -2,8 +2,8 @@
 #include "dog.h"
 
 /**
- * free_dog - Freeing dogs 
- * @d: Pointer to dog 
+ * free_dog - Freeing dogs
+ * @d: Pointer to dog
  * Return: void
 **/
 void free_dog(dog_t *d)
