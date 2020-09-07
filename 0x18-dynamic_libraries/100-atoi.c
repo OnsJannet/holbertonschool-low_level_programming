@@ -30,5 +30,5 @@ i++;
 }
 }
 neg = neg * -1;
-return (number * neg);
+return (number *neg);
 }
