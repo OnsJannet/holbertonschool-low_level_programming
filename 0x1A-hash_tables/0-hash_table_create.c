@@ -1,15 +1,15 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_create - creates hash table
- * @size: size of hash table
+ * hash_table_create - creates a hash table
+ * @size: size of the array
  *
- * Return: pointer to hash table
+ * Return: pointer to a struct of type hash_table_t
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *ht;
+	hash_table_t *ht = NULL;
 
 	if (size == 0)
 		return (NULL);
@@ -19,7 +19,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	ht->array = calloc(size, sizeof(hash_node_t *));
-	if (!ht->array)
+	if (ht->array == NULL)
 	{
 		free(ht);
 		return (NULL);
