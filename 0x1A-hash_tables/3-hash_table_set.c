@@ -1,11 +1,12 @@
 #include "hash_tables.h"
 
 /**
- * ht_put() - Allocates memory for a new node 
+ * ht_put - Allocates memory for a new node
  * @key: the key to add to the hash table
  * @value: the corresponding value to add to the node
  *
- * Return: 0 if memory allocation fails and 1 if the function returns successfully
+ * Return: 0 if memory allocation fails and 1 if the
+ *function returns successfully
  */
 hash_node_t *ht_put(const char *key, const char *value)
 {
@@ -31,7 +32,6 @@ hash_node_t *ht_put(const char *key, const char *value)
 
 
 /**
- /**
  * hash_table_set - adds an element to the hash table
  * @ht: pointer to a struct of type hash_table_t
  * @key: key to add
