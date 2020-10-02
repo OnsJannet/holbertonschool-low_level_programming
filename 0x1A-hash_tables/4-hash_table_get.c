@@ -19,7 +19,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	tmp = ht->array[hash];
 	while (tmp != NULL)
 	{
-		if (!strcmp(tmp->key,key))
+		if (!strcmp(tmp->key, key))
 			return (tmp->value);
 		tmp = tmp->next;
 	}
