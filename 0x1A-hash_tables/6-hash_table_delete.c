@@ -2,7 +2,7 @@
 /**
  * hash_table_delete - deletes a hash table
  *
- * @ht: pointer to hash table data structure
+ * @ht: hash table
  * Return: void
  */
 void hash_table_delete(hash_table_t *ht)
@@ -15,15 +15,14 @@ void hash_table_delete(hash_table_t *ht)
 		return;
 	for (i = 0; i < ht->size; i++)
 	{
-		head = ht->array[i];
-		    while (head != NULL)
-		    {
-			    tmp = head->next;
-			    free(head->key);
-			    free(head->value);
-			    free(head);
-			    head = tmp;
-		    }
+		while (head != NULL)
+		{
+			tmp = ht->array[i]->next;
+			free(ht->array[i]->key);
+			free(ht->array[i]->value);
+			free(ht->array[i]);
+			ht->array[i] = tmp;
+		}
 	}
 	free(ht->array);
 	free(ht);
