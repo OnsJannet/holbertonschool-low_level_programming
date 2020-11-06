@@ -1,5 +1,5 @@
 # build an executable named holberton from holberton.c
-all: main.c holberton.c
+all: $(OBJ)
 CC = gcc
 SRC = holberton.c
 OBJ = $(SRC:.c=.o)
