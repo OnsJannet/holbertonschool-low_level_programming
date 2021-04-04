@@ -24,9 +24,9 @@ a repository that contains programs written for athe low-level programming track
 * [0x0D. C - preprocessor](./0x0D-preprocessor)
 * [0x0E. C - structures](./0x0E-structures_typedef)
 * [0x0F. C - function pointers](./0x0F-function_pointers)
-* [0x0F. C - hash tables](./0x1A-hash_tables)
-* [0x0F. C - makefiles](./0x1C-makefiles)
-* [0x0F. C - search algorithms](./0x1E-search_algorithms)
+* [0x1A. C - hash tables](./0x1A-hash_tables)
+* [0x1C. C - makefiles](./0x1C-makefiles)
+* [0x1E. C - search algorithms](./0x1E-search_algorithms)
 
 ## Author :black_nib:
 
